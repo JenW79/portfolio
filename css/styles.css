@@ -133,6 +133,39 @@ h4, h5 {
   margin: 5px 0;
 }
 
+#experience h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#experience .text-muted {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+#experience ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#experience ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+#experience ul li::before {
+  content: "•";
+  color: #007bff; 
+  position: absolute;
+  left: 0;
+}
+
+
 #skills ul {
   list-style: none;
   padding-left: 0;
