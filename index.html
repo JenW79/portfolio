@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
 <body>
@@ -43,24 +42,23 @@
     </div>
   </nav>
 
-  
-
   <div class="container-fluid bg-light py-5 text-center" id="about">
     <div class="row">
       <div class="container text-center mt-5">
         <h1 id="dynamic-title">I'm Jen, a <span id="role">Software Developer</span>.</h1>
-      </div>      
       </div>
     </div>
   </div>
-  
-
   <div class="container py-5">
     <div class="card mb-3 mx-auto text-center" style="max-width: 800px; border: none;">
         <div class="row g-0 align-items-center">
             <div class="col-md-4 text-center">
                 <img src="images/jen2.png" class="img-fluid rounded-circle" alt="Jen's Pic" style="max-width: 150px;">
-            </div>
+                <div class="social-links d-flex justify-content-center mt-3">
+                  <a href="https://github.com/JenW79" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+                  <a href="https://www.linkedin.com/in/jkwill646/" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+              </div>
+              </div>
             <div class="col-md-8 text-start">
                 <div class="card-body">
                     <h2 class="card-title">About Me</h2>
@@ -70,127 +68,110 @@
                 </div>
             </div>
         </div>
-        <div class="social-links d-flex justify-content-center mt-3">
-            <a href="https://github.com/JenW79" class="me-3"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/jkwill646/" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-        </div>
     </div>
 </div>
 
+  <!-- Portfolio Section -->
+  <div id="portfolio" class="portfolio-scrollable container py-5">
+    <h2 class="text-center mb-4">Portfolio</h2>
+    <div class="scroll-wrapper">
+      <button class="scroll-btn left" aria-label="Scroll left">&lt;</button>
+      <div class="scroll-container">
+        <div class="portfolio-item" tabindex="0">
+          <img src="images/bejewled.png" alt="Bejeweled Fruits">
+          <div class="portfolio-info">
+            <h3>Bejeweled Fruits</h3>
+            <a href="https://jenw79.github.io/bejeweled/" class="btn btn-primary btn-sm mt-2" aria-label="View Bejeweled Fruits Website">View Website</a>
+            <a href="https://github.com/JenW79/bejeweled" class="btn btn-secondary btn-sm mt-2" aria-label="View Bejeweled Fruits Codebase">View Codebase</a>
+          </div>
+        </div>
+        <div class="portfolio-item" tabindex="0">
+          <img src="images/tindogSS.png" alt="Tindog Screenshot">
+          <div class="portfolio-info">
+            <h3>Tindog</h3>
+            <a href="https://jenw79.github.io/tindog/" class="btn btn-primary btn-sm mt-2" aria-label="View Tindog Website">View Website</a>
+            <a href="https://github.com/JenW79/tindog" class="btn btn-secondary btn-sm mt-2" aria-label="View Tindog Codebase">View Codebase</a>
+          </div>
+        </div>
+        <div class="portfolio-item" tabindex="0">
+          <img src="images/drumkit.png" alt="Drumkit Screenshot">
+          <div class="portfolio-info">
+            <h3>Drumkit</h3>
+            <a href="https://jenw79.github.io/drumset/" class="btn btn-primary btn-sm mt-2" aria-label="View Drumkit Website">View Website</a>
+            <a href="https://github.com/JenW79/drumset" class="btn btn-secondary btn-sm mt-2" aria-label="View Drumkit Codebase">View Codebase</a>
+          </div>
+        </div>
+        <div class="portfolio-item" tabindex="0">
+          <img src="images/adventuregame.png" alt="Adventure Game Screenshot">
+          <div class="portfolio-info">
+            <h3>Adventure Game</h3>
+            <a href="https://jenw79.github.io/adventure-game/" class="btn btn-primary btn-sm mt-2" aria-label="View Adventure Game Website">View Website</a>
+            <a href="https://github.com/JenW79/aa04-adventure-project" class="btn btn-secondary btn-sm mt-2" aria-label="View Adventure Game Codebase">View Codebase</a>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-btn right" aria-label="Scroll right">&gt;</button>
+    </div>
+  </div>
+
+  <div class="container py-5" id="education">
+    <h2 class="text-center mb-4">Education</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5><i class="fas fa-graduation-cap"></i> Master of Business Administration</h5>
+        <p>University of Phoenix, 2014</p>
+      </div>
+    </div>
+  </div>
+  <div id="skills" class="container py-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <ul class="nav nav-tabs" id="skillsTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="technical-tab" data-bs-toggle="tab" data-bs-target="#technicalSkillsTab" type="button" role="tab" aria-controls="technicalSkillsTab" aria-selected="true">
+          <i class="fas fa-laptop-code"></i> Technical Skills
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="soft-tab" data-bs-toggle="tab" data-bs-target="#softSkillsTab" type="button" role="tab" aria-controls="softSkillsTab" aria-selected="false">
+          <i class="fas fa-user-friends"></i> Soft Skills
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="skillsTabsContent">
+      <div class="tab-pane fade show active" id="technicalSkillsTab" role="tabpanel" aria-labelledby="technical-tab">
+        <ul>
+          <li><i class="fas fa-code"></i> JavaScript (Node.js, React, Redux)</li>
+          <li><i class="fas fa-desktop"></i> Front-End Development (HTML, CSS, Bootstrap)</li>
+          <li><i class="fas fa-server"></i> Back-End Development (Node.js, SQL)</li>
+          <li><i class="fas fa-vial"></i> Test-Driven Development (TDD)</li>
+          <li><i class="fas fa-project-diagram"></i> Object-Oriented Programming (OOP)</li>
+          <li><i class="fas fa-database"></i> Data Structures (LinkedLists, Hash Tables, Classes)</li>
+          <li><i class="fas fa-table"></i> Database Management (Microsoft Excel, SQL)</li>
+          <li><i class="fas fa-chart-line"></i> Data Analysis</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="softSkillsTab" role="tabpanel" aria-labelledby="soft-tab">
+        <ul>
+          <li><i class="fas fa-comments"></i> Communication</li>
+          <li><i class="fas fa-users"></i> Leadership and Team Management</li>
+          <li><i class="fas fa-handshake"></i> Negotiation</li>
+          <li><i class="fas fa-headset"></i> Customer Service Management</li>
+          <li><i class="fas fa-check-circle"></i> Quality Assurance</li>
+          <li><i class="fas fa-exchange-alt"></i> Cross-Functional Collaboration</li>
+          <li><i class="fas fa-star"></i> Performance Evaluation and Feedback</li>
+          <li><i class="fas fa-balance-scale"></i> Problem Solving and Conflict Resolution</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   
-
-
- <!-- Portfolio Section -->
-<div class="container py-5" id="portfolio">
-  <h2 class="text-center mb-4">Portfolio</h2>
-  <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images\bejewled.png" class="d-block w-100 portfolio-image" alt="Bejeweled Fruits">
-        <div class="carousel-caption d-none d-md-block">
-          
-          <a href="https://jenw79.github.io/bejeweled/" class="btn btn-primary btn-sm mt-2">View Website</a>
-          <a href="https://github.com/JenW79/bejeweled" class="btn btn-secondary btn-sm mt-2">View Codebase</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images\tindogSS.png" class="d-block w-100 portfolio-image" alt="Tindog Screenshot">
-        <div class="carousel-caption d-none d-md-block">
-          <a href="https://jenw79.github.io/tindog/" class="btn btn-primary btn-sm mt-2">View Website</a>
-          <a href="https://github.com/JenW79/tindog" class="btn btn-secondary btn-sm mt-2">View Codebase</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images\drumkit.png" class="d-block w-100 portfolio-image" alt="Drumset">
-        <div class="carousel-caption d-none d-md-block">
-          
-          <a href="https://jenw79.github.io/drumset/" class="btn btn-primary btn-sm mt-2">View Website</a>
-          <a href="https://github.com/JenW79/drumset" class="btn btn-secondary btn-sm mt-2">View Codebase</a>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="images\adventuregame.png" class="d-block w-100 portfolio-image" alt="Adventure Game">
-        <div class="carousel-caption d-none d-md-block">
-          
-          <a href="https://jenw79.github.io/adventure-game/" class="btn btn-primary btn-sm mt-2">View Website</a>
-          <a href="https://github.com/JenW79/aa04-adventure-project" class="btn btn-secondary btn-sm mt-2">View Codebase</a>
-        </div>
-      </div>
-      
-      
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
-
-
-<div class="container py-5" id="skills">
-  <h2 class="text-center mb-4">Skills</h2>
-  <div class="row">
-    <!-- Technical Skills -->
-    <div class="col-md-6 mb-4">
-      <h4><i class="fas fa-laptop-code"></i> Technical Skills</h4>
-      <ul class="list-group">
-        <li class="list-group-item"><i class="fas fa-code"></i> JavaScript (Node.js, React, Redux)</li>
-        <li class="list-group-item"><i class="fas fa-desktop"></i> Front-End Development (HTML, CSS, Bootstrap)</li>
-        <li class="list-group-item"><i class="fas fa-server"></i> Back-End Development (Node.js, SQL)</li>
-        <li class="list-group-item"><i class="fas fa-vial"></i> Test-Driven Development (TDD)</li>
-        <li class="list-group-item"><i class="fas fa-project-diagram"></i> Object-Oriented Programming (OOP)</li>
-        <li class="list-group-item"><i class="fas fa-database"></i> Data Structures (LinkedLists, Hash Tables, Classes)</li>
-        <li class="list-group-item"><i class="fas fa-table"></i> Database Management (Microsoft Excel, SQL)</li>
-        <li class="list-group-item"><i class="fas fa-chart-line"></i> Data Analysis</li>
-      </ul>
-    </div>
-    <!-- Soft Skills -->
-    <div class="col-md-6 mb-4">
-      <h4><i class="fas fa-user-friends"></i> Soft Skills</h4>
-      <ul class="list-group">
-        <li class="list-group-item"><i class="fas fa-comments"></i> Communication</li>
-        <li class="list-group-item"><i class="fas fa-users"></i> Leadership and Team Management</li>
-        <li class="list-group-item"><i class="fas fa-handshake"></i> Negotiation</li>
-        <li class="list-group-item"><i class="fas fa-headset"></i> Customer Service Management</li>
-        <li class="list-group-item"><i class="fas fa-check-circle"></i> Quality Assurance</li>
-        <li class="list-group-item"><i class="fas fa-exchange-alt"></i> Cross-Functional Collaboration</li>
-        <li class="list-group-item"><i class="fas fa-star"></i> Performance Evaluation and Feedback</li>
-        <li class="list-group-item"><i class="fas fa-balance-scale"></i> Problem Solving and Conflict Resolution</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-<div class="container py-5" id="education">
-  <h2 class="text-center mb-4">Education</h2>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <h5><i class="fas fa-graduation-cap"></i> Master of Business Administration</h5>
-      <p>University of Phoenix, 2014</p>
-    </div>
-  </div>
-</div>
   
 
   <div class="container py-5" id="contact">
     <h2 class="text-center mb-4">Get In Touch</h2>
-    <form>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="youremail@email.com">
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <button class="btn btn-primary btn-lg" onclick="window.location.href='path-to-your-resume.pdf';">
+      <i class="fas fa-download"></i> Download My Resume
+    </button>
   </div>
   
 
@@ -201,36 +182,8 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-    const roles = ["Software Developer", "Data Analyst", "Full-Stack Engineer", "Tech Enthusiast"];
-    let roleIndex = 0;
-  
-    function changeRole() {
-      const roleElement = document.getElementById('role');
-      roleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length; 
-    }
-    
-    setInterval(changeRole, 2000);
-  </script>
-
-  <script>
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-  
-  
-  <script>
-    const toggleButton = document.getElementById('dark-mode-toggle');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
-  <script src="hpscript.js"></script>
+  <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>

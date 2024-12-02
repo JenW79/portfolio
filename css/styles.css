@@ -46,7 +46,8 @@ h4, h5 {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
+  margin-left: 10px;
 }
 
 .jenpic {
@@ -55,21 +56,110 @@ h4, h5 {
   border-radius: 50%;
 }
 
-
-.portfolio-image {
-  max-height: 400px; 
-  object-fit: cover; 
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.carousel-caption h5,
-.carousel-caption p {
-  color: black; 
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn.left {
+  left: -10px;
+}
+
+.scroll-btn.right {
+  right: -10px;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.portfolio-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.portfolio-info {
+  padding: 15px;
+}
+
+.portfolio-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-info a {
+  margin: 5px 0;
+}
+
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+#skills ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-tabs .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact-message {
   width: 90%;
   margin: 5% auto;
 }
+
+
 
 .copyright {
   color: #DAB88B;
@@ -98,6 +188,27 @@ h4, h5 {
 .btn-custom:hover {
   background-color: #DAB88B;
 }
+
+#contact .btn-primary {
+  background-color: #007bff; /* Blue color */
+  color: #ffffff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  transition: background-color 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#contact .btn-primary i {
+  font-size: 1.3rem; /* Adjust icon size */
+}
+
 
 .list-group-item i {
   margin-right: 10px; 
