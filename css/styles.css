@@ -52,7 +52,7 @@ h4, h5 {
 
 .jenpic {
   max-width: 200px;
-  margin-top: 10%;
+  margin-top: 12%;
   border-radius: 50%;
 }
 
@@ -154,12 +154,6 @@ h4, h5 {
   gap: 10px;
 }
 
-.contact-message {
-  width: 90%;
-  margin: 5% auto;
-}
-
-
 
 .copyright {
   color: #DAB88B;
@@ -191,12 +185,14 @@ h4, h5 {
 
 #contact .btn-primary {
   background-color: #007bff; /* Blue color */
+  margin: 0 auto;
   color: #ffffff;
   border: none;
   font-size: 1.1rem;
   padding: 12px 20px;
-  display: flex;
+  display: block;
   align-items: center;
+  text-align: center;
   gap: 10px; /* Space between icon and text */
   transition: background-color 0.3s ease;
 }
@@ -313,4 +309,8 @@ body.dark-mode footer {
 
 body.dark-mode footer p {
   color: #ffffff !important; 
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; 
 }
