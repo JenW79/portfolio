@@ -133,38 +133,75 @@ h4, h5 {
   margin: 5px 0;
 }
 
-#experience h5 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-#experience .text-muted {
-  font-size: 0.9rem;
-  color: #6c757d;
-}
-
-#experience ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-#experience ul li {
-  margin-bottom: 8px;
-  padding-left: 20px;
+.hover-card {
   position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
-#experience ul li::before {
-  content: "•";
-  color: #007bff; 
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.hover-card .card-body {
+  position: relative;
+  padding: 20px;
+  height: 100%;
+}
+.text-muted {
+  color: #b3b3b3 !important; 
+}
+
+/* Hidden Details - Default State */
+.hover-card .hidden-details {
   position: absolute;
+  bottom: 0;
   left: 0;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
+
+.hover-card:hover .hidden-details {
+  max-height: 215px; 
+  overflow-y: auto; 
+}
+
+
+.hidden-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.hidden-details ul li {
+  margin-bottom: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hover-card {
+    transform: none; 
+    box-shadow: none; 
+  }
+
+  .hover-card:hover {
+    box-shadow: none; 
+  }
+
+  .hidden-details {
+    max-height: 200px; 
+    overflow-y: auto; 
+  }
+}
 
 #skills ul {
   list-style: none;
@@ -217,7 +254,7 @@ h4, h5 {
 }
 
 #contact .btn-primary {
-  background-color: #007bff; /* Blue color */
+  background-color: #007bff; 
   margin: 0 auto;
   color: #ffffff;
   border: none;
@@ -226,16 +263,16 @@ h4, h5 {
   display: block;
   align-items: center;
   text-align: center;
-  gap: 10px; /* Space between icon and text */
+  gap: 10px; 
   transition: background-color 0.3s ease;
 }
 
 #contact .btn-primary:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 #contact .btn-primary i {
-  font-size: 1.3rem; /* Adjust icon size */
+  font-size: 1.3rem; 
 }
 
 
@@ -293,6 +330,9 @@ body.dark-mode .bg-light {
   background-color: #333333 !important; 
 }
 
+body.dark-mode .text-muted {
+  color: #e0e0e0 !important; 
+}
 
 body.dark-mode .list-group-item {
   background-color: #333333; 
@@ -316,8 +356,8 @@ body.dark-mode .btn-secondary {
 }
 
 
-body.dark-mode .carousel-caption h5,
-body.dark-mode .carousel-caption p {
+body.dark-mode .hidden-details {
+  background-color: #1a1a1a; 
   color: #ffffff; 
 }
 
