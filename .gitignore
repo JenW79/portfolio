@@ -21,4 +21,5 @@ dist/
 *.njsproj
 *.sln
 *.sw?
-./history
+.history
+.history/
