@@ -30,7 +30,7 @@ export default function Hero() {
           <h2>About Me</h2>
           <hr />
           <p>
-            I am a junior software engineer passionate about building innovative,
+            I’m a junior software engineer passionate about building innovative,
             user-focused solutions. Currently advancing my skills at App
             Academy, I specialize in full-stack development with JavaScript,
             React, Node.js, and SQL. My background as an AI Evaluator brings
