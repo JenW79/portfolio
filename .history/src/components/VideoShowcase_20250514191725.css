@@ -1,0 +1,56 @@
+.video-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #121212;
+  color: #bcbab5;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.phone-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-right {
+  flex: 1 1 400px;
+  max-width: 600px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.video-right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.video-right blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #dab88b;
+}
+
+.watch-cta {
+  font-size: 0.95rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.play-icon {
+  font-size: 1.2rem;
+  color: #dab88b;
+}
