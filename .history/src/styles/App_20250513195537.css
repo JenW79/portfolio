@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #121212;
+  color: white;
+}
+.hero .left, .hero .right {
+  flex: 1;
+  min-width: 300px;
+  margin: 1rem;
+}
