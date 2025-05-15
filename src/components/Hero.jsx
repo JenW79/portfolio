@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="side panel hero-left">
           <div className="circle-container">
             <img
-              src="/images/jen2.png"
+              src="images/jen2.png"
               alt="Jennifer Williams"
               className="hero-image"
             />
@@ -39,7 +39,7 @@ export default function Hero() {
           </p>
           <div className="hero-buttons">
             <a
-              href="resume/JenKWilliamsresume.pdf"
+              href="resume/JenKWilliamsResume.pdf"
               className="outline-button"
               target="_blank"
               rel="noreferrer"

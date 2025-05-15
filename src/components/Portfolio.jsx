@@ -1,6 +1,4 @@
 
-
-
 import { useState } from "react";
 import ProjectHighlightModal from "./ProjectHighlightModal";
 import "./Portfolio.css";
@@ -11,9 +9,9 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Codehire",
-      gif: "/images/codehire.gif",
-      preview: "/images/codehire-desktop.png",
-      phonePreview: "/images/codehire-phone.png",
+      gif: "images/codehire.gif",
+      preview: "images/codehire-desktop.png",
+      phonePreview: "images/codehire-phone.png",
       description: "A job tracker powered by OpenAI and multiple APIs for real-time job search and AI-generated resumes.",
       tech: ["react", "redux", "nodejs", "postgresql", "express", "javascript", "html5", "css3"],
       demo: "https://codehire-ie8o.onrender.com",
@@ -21,9 +19,9 @@ export default function Portfolio() {
     },
     {
     title: "Time Capsule",
-    gif: "/images/timecapsule.gif", 
-    preview: "/images/timecapsule-desktop.png", 
-    phonePreview: "/images/timecapsule-phone.png", 
+    gif: "images/timecapsule.gif", 
+    preview: "images/timecapsule-desktop.png", 
+    phonePreview: "images/timecapsule-phone.png", 
     description: "A collaborative group retro-inspired e-commerce app project bringing back the best of the '80s, '90s, and 2000s through curated nostalgic items.",
     tech: ["react", "redux", "flask", "python", "sqlalchemy", "postgresql", "javascript", "html5", "css3"],
     demo: "https://timecapsule-dev-preview.onrender.com",
@@ -31,9 +29,9 @@ export default function Portfolio() {
   },
    {
     title: "Home Rentals Clone",
-    gif: "/images/airbnb.gif", 
-    preview: "/images/airbnb-desktop.png", 
-    phonePreview: "/images/airbnb-phone.png", 
+    gif: "images/airbnb.gif", 
+    preview: "images/airbnb-desktop.png", 
+    phonePreview: "images/airbnb-phone.png", 
     description: "A solo project that recreates core features of Airbnb including bookings, reviews, and user authentication.",
     tech: ["react", "redux", "express", "sequelize", "postgresql", "javascript", "html5", "css3"],
     demo: "https://jens-auth-me.onrender.com/",

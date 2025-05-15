@@ -7,7 +7,7 @@ export default function VideoShowcase() {
       <div className="side panel video-left">
         <div className="phone-frame">
           <video
-            src="/videos/why-i-code.mov"
+            src="videos/why-i-code.mov"
             controls
             autoPlay
             muted
