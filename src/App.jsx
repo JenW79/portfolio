@@ -1,10 +1,8 @@
-// File: src/App.jsx
-
 import Hero from "./components/Hero";
 import ProjectHighlightModal from "./components/ProjectHighlightModal";
 import VideoShowcase from "./components/VideoShowCase";
 import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import Skills from "./components/Skills"; 
 import "./styles/App.css";
 
 function App() {
@@ -16,14 +14,14 @@ function App() {
       <section id="video">
         <VideoShowcase />
       </section>
+      <section id="skills">
+        <Skills />
+      </section>
       <section id="portfolio">
         <Portfolio />
       </section>
-      <section id="featured">
+       <section id="featured">
         <ProjectHighlightModal />
-      </section>
-      <section id="contact">
-        <Footer />
       </section>
     </>
   );

@@ -5,14 +5,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "copydocs": "rm -rf docs/* && cp -r dist/* docs/",
+  "deploy": "npm run build && npm run copydocs && git add . && git commit -m 'Deploy updated site' && git push origin main",
+  "lint": "eslint .",
+  "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "simple-icons": "^14.13.0"

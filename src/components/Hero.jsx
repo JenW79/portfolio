@@ -1,6 +1,10 @@
+import { useState } from "react";
+import ContactModal from "./ContactModal";
 import "./Hero.css";
 
 export default function Hero() {
+  const [showContact, setShowContact] = useState(false);
+
   return (
     <section className="hero-section">
       <div className="section-wrap">
@@ -14,15 +18,8 @@ export default function Hero() {
           </div>
           <h1 className="hero-name">Jennifer Williams</h1>
           <p className="hero-title">Software Engineer</p>
-          <button
-            className="hero-button"
-            onClick={() =>
-              document
-                .getElementById("portfolio")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            LEARN MORE
+          <button className="hero-button" onClick={() => setShowContact(true)}>
+            Contact Me
           </button>
         </div>
 
@@ -30,12 +27,11 @@ export default function Hero() {
           <h2>About Me</h2>
           <hr />
           <p>
-            I am a junior software engineer passionate about building innovative,
-            user-focused solutions. Currently advancing my skills at App
-            Academy, I specialize in full-stack development with JavaScript,
-            React, Node.js, and SQL. My background as an AI Evaluator brings
-            valuable insight into optimizing logic and data. I am excited to
-            build tools that help people and businesses thrive.
+            I’m a software engineer focused on building thoughtful, full-stack
+            solutions with React, Node.js, and SQL. With a background in AI
+            evaluation and real-world projects, I thrive in collaborative teams
+            and love turning ideas into usable products. Let's build something
+            great together!
           </p>
           <div className="hero-buttons">
             <a
@@ -47,11 +43,18 @@ export default function Hero() {
               Resume
             </a>
             <a href="#portfolio" className="outline-button">
-              Portfolio
+              Projects
             </a>
           </div>
         </div>
       </div>
+
+      <ContactModal show={showContact} onClose={() => setShowContact(false)} />
+      <img
+        src="/images/hero-wave-divider.jpg"
+        alt="Decorative section divider"
+        className="hero-divider"
+      />
     </section>
   );
 }

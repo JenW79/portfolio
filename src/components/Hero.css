@@ -11,12 +11,8 @@
 }
 
 .hero-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: 300px;
   margin-bottom: 1.5rem;
-  transform: rotate(334deg);
 }
 
 .hero-name {
@@ -89,4 +85,11 @@
 
 .outline-button:hover {
   background-color: #2a2a2a;
+}
+
+.hero-divider {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
 }
