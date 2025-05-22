@@ -108,10 +108,16 @@
 
 @media (max-width: 768px) {
   .modal-content {
-    width: 95%;
+    width: 100vw; 
+    max-width: 100vw;
     padding: 1rem;
-    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
+  }
+
+  .modal-backdrop {
+    padding: 0; 
   }
 
   .modal-body {
@@ -122,8 +128,8 @@
 
   .modal-left,
   .modal-right {
-    flex: 1 1 100%;
     width: 100%;
+    flex: 1 1 100%;
   }
 
   .modal-left img:not(.phone-preview) {
@@ -135,18 +141,16 @@
   }
 
   .modal-close {
-    top: 0.5rem;
-    right: 0.5rem;
-    font-size: 1.5rem;
-  }
-
-  .stack-icons {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .modal-buttons a {
-    display: inline-block;
-    margin: 0.5rem 0.5rem 0 0;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
   }
 }
