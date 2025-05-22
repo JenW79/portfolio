@@ -107,13 +107,46 @@
 
 
 @media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .modal-body {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
 
-  .modal-left img {
+  .modal-left,
+  .modal-right {
+    flex: 1 1 100%;
     width: 100%;
-    height: auto;
+  }
+
+  .modal-left img:not(.phone-preview) {
+    max-width: 100%;
+  }
+
+  .phone-preview {
+    max-width: 60%;
+  }
+
+  .modal-close {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .stack-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modal-buttons a {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
   }
 }
