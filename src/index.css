@@ -16,12 +16,17 @@ body {
   line-height: 1.6;
 }
 
-.section-wrap {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.section-wrap  {
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
   width: 100%;
-  align-items: center;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 .side.panel {
@@ -71,7 +76,7 @@ button:hover {
 @media (max-width: 768px) {
   .section-wrap {
     flex-direction: column;
-    padding: 1rem;
+    
   }
 
   .hero-left,
