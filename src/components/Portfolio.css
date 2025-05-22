@@ -1,6 +1,6 @@
 .portfolio-section {
   background-color: #121212;
-  color: #ffffff;
+  color: #bcbab5;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -38,7 +38,7 @@
 
 .portfolio-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 6px;
   margin-bottom: 1rem;
 }
@@ -51,8 +51,8 @@
 .learn-btn {
   display: inline-block;
   padding: 8px 16px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #bcbab5;
+  border: 1px solid #bcbab5;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s;

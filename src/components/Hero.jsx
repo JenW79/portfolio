@@ -35,7 +35,7 @@ export default function Hero() {
           </p>
           <div className="hero-buttons">
             <a
-              href="resume/JenKWilliamsResume.pdf"
+              href={`${import.meta.env.BASE_URL}resume/JenKWilliamsResume.pdf`}
               className="outline-button"
               target="_blank"
               rel="noreferrer"
@@ -51,7 +51,7 @@ export default function Hero() {
 
       <ContactModal show={showContact} onClose={() => setShowContact(false)} />
       <img
-        src="/images/hero-wave-divider.jpg"
+        src={`${import.meta.env.BASE_URL}images/hero-wave-divider.jpg`}
         alt="Decorative section divider"
         className="hero-divider"
       />

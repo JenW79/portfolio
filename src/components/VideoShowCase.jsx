@@ -30,6 +30,11 @@ export default function VideoShowcase() {
         </p>
       </div>
       </div>
+       <img
+        src={`${import.meta.env.BASE_URL}images/hero-wave-divider.jpg`}
+        alt="Decorative section divider"
+        className="hero-divider"
+      />
     </section>
   );
 }

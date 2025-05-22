@@ -6,7 +6,6 @@
   margin: 0;
   background-color: #121212;
   color: #bcbab5;
-  gap: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -59,4 +58,11 @@
 .play-icon {
   font-size: 1.2rem;
   color: #dab88b;
+}
+
+.hero-divider {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin: 0;
 }

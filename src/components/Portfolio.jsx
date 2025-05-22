@@ -41,7 +41,7 @@ export default function Portfolio() {
 
   return (
     <section className="portfolio-section" id="portfolio">
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
       <hr />
       <div className="portfolio-grid">
         {projects.map((project, index) => (
