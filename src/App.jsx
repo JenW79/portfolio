@@ -1,6 +1,6 @@
 import Hero from "./components/Hero";
 import ProjectHighlightModal from "./components/ProjectHighlightModal";
-import VideoShowcase from "./components/VideoShowCase";
+import Testimonials from "./components/Testimonials";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills"; 
 import "./styles/App.css";
@@ -11,8 +11,8 @@ function App() {
       <section id="about">
         <Hero />
       </section>
-      <section id="video">
-        <VideoShowcase />
+      <section id="testimonials">
+        <Testimonials />
       </section>
       <section id="skills">
         <Skills />
